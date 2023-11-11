@@ -44,8 +44,7 @@ function populateData() {
 
   if (dataLocalStorage) {
     const dataLocalStorageParse = JSON.parse(dataLocalStorage);
-    console.log('email:', dataLocalStorageParse.email);
-    console.log('message:', dataLocalStorageParse.message);
+    console.log( dataLocalStorageParse);
     localStorage.removeItem('feedback_form_state');
     refs.form.reset();
   }
